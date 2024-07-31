@@ -13,10 +13,16 @@ class ShopPage extends StatelessWidget {
     return Scaffold(
         backgroundColor: Theme.of(context).colorScheme.surface,
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          foregroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: const Text("Shop"),
-        ),
+            backgroundColor: Colors.transparent,
+            foregroundColor: Theme.of(context).colorScheme.inversePrimary,
+            title: const Text("Shop"),
+            centerTitle: true,
+            actions: [
+              IconButton(
+                onPressed: () => Navigator.pushNamed(context, '/cart_page'),
+                icon: Icon(Icons.shopping_cart),
+              )
+            ]),
         drawer: MyDrawer(),
         body: ListView(
           children: [

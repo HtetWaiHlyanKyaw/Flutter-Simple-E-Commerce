@@ -12,6 +12,9 @@ class MyProductTile extends StatelessWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
         content: Text("Add this item to your cart?"),
         actions: [
           MaterialButton(
@@ -56,9 +59,7 @@ class MyProductTile extends StatelessWidget {
                     ),
                     width: double.infinity,
                     padding: EdgeInsets.all(25),
-                    child: Icon(
-                      Icons.favorite,
-                    )),
+                    child: Image.asset(product.imagePath)),
               ),
               const SizedBox(height: 25),
               Text(

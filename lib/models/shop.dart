@@ -6,17 +6,17 @@ class Shop extends ChangeNotifier {
     Product(
         name: "Samsung Galaxy Z Fold 6",
         price: 2999,
-        imagePath: '',
+        imagePath: 'flutter-e-commerce/samsung galaxy z fold 6.jpg',
         description: "Excellent product with high functionalities"),
     Product(
         name: "Nike Air Force 1",
         price: 149,
-        imagePath: '',
+        imagePath: 'flutter-e-commerce/nike air force 1.webp',
         description: "All time classy timeless icon"),
     Product(
         name: "Beats Solo 3",
         price: 249,
-        imagePath: '',
+        imagePath: 'flutter-e-commerce/beats solo 3.jpg',
         description: "Best wireless headphones"),
   ];
 
